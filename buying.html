@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>RED BOOK</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
+</head>
+
+<body>
+
+<div class="main-wrapper">
+
+<!-- -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- <HEADER> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- -->
+
+	<header>
+    	<div id="logo"><a href="index.html"><img src="images/logo.png" alt="logo" /></a></div>
+      	<div id="search">
+            <input type="text" placeholder="Ej. Tolkien, Canción de hielo y fuego, la Biblia..." id="search-bar"/>
+            <div id="mag-glass"><i class="fa fa-search"></i></div>
+        </div>
+        <div id="basket"><a href="buying.html"><i class="fa fa-shopping-basket"></i></a><span>0</span></div>
+        <div id="prelogin">
+            <div id="login">
+                <input type="text" id="user" placeholder="Usuario"/>
+                <input type="password" id="pass" placeholder="Contraseña"/>
+                <input type="submit" value="LOGIN" id="btn-login" />
+                <a href="#">Olvidé la contraseña</a>
+            </div>
+        </div>
+    </header>
+    
+    <nav>    
+    	<ul id="main-menu">
+        	<li id="home"><a href="index.html">Inicio</a></li>
+        	<li><a href="product.html">Categorías</a></li>
+        	<li><a href="product.html">Libros</a></li>
+            <li><a href="product.html">E-Books</a></li>
+            <li><a href="product.html">Ofertas</a></li>
+        </ul>
+    </nav>        
+
+<!-- -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </HEADER> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- -->
+
+
+    
+    <div id="pasos">
+        <div>1. Información</div>
+        <div>2. Envío</div>
+        <div>3. Pago</div>
+        <div>4. Confirmación</div>
+    </div>
+           
+      
+
+<!-- -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- <informacion> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- -->
+
+    <div id="info-wrapper">
+        
+        <div id="billing-wrap">   
+        
+            <div id="billing">
+            <h2>Perfiles guardados</h2>   
+                <div class="billing-box toggle-profile">
+                    <div class="billing-name">Alberto Lorman</div><br />
+                    <div class="billing-address">C/ Falsa 123</div>
+                    <div class="billing-city">Gava 08850</div>
+                    <div class="billing-country">España</div>
+                    <div class="actions">
+                    	<a href="#">Editar</a>
+                    	<a href="#">Eliminar</a>
+                    </div>
+                </div>
+                
+                <div class="billing-box">
+                    <div class="billing-name">Jordi Almirall</div><br />
+                    <div class="billing-address">C/ Verdadera 321</div>
+                    <div class="billing-city">Viladecans 08840</div>
+                    <div class="billing-country">España</div>
+                    <div class="actions">
+                    	<a href="#">Editar</a>
+                    	<a href="#">Eliminar</a>
+                    </div>
+                </div>
+            </div>        
+        
+            	 
+            <div id="new-billing">   
+            	<h2>Crear nuevo perfil</h2>  
+            	<div id="billing-form">  
+                    <div id="left-part">
+                        <label for="nombre">Nombre*<br /><input type="text" name="nombre" id="nombre" /></label>
+                        <label for="apellido">Apellido*<br /><input type="text" name="apellido" id="apellido" /></label>
+                        <label for="direccion">Direccion*<br /><input type="text" name="direccion" id="direccion" /></label>
+                        <label for="ciudad">Ciudad*<br /><input type="text" name="ciudad" id="ciudad" /></label>
+                    </div>
+                    <div id="right-part">
+                        <label for="postal">Postal*<br /><input type="text" name="postal" id="postal" /></label>
+                        <label for="pais">País*<br />
+                            <select id="pais">
+                                <option value="0">Selecciona...</option>
+                                <option value="123">España</option>
+                            </select>
+                        </label>
+                        <label for="telefono">Telefono<br /><input type="text" name="telefono" id="telefono" /></label>
+                        <div id="btn-save-wrap">
+                            <input type="button" value="Guardar" id="btn-save" />
+                        </div>
+                    </div>
+             	</div>	
+            </div>            
+		</div>     
+       
+<!-- -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </informacion> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- -->
+
+
+
+
+
+<!-- -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- <envio> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- --> 
+
+        
+        <div id="ship-wrapper">   
+             
+             <h2>Servicio de Transporte</h2>
+             
+        	<div id="transport">
+            	<div class="transport-toggle"><img alt="mrw" src="images/mrw.png" /> &nbsp;| +4.99€ | Servicio de transporte por MRW</div>
+            	<div><img alt="seur" src="images/seur.png" /> &nbsp;| +3.99€ | Servicio de transporte por SEUR</div>
+            	<div><img alt="correos" src="images/correos.jpg" /> &nbsp;| +4.49€ | Servicio de transporte por Correos Express</div>
+            </div>        
+             
+            <h2 id="v_ebook">Versión E-Book</h2>
+            
+            <div id="emails">            	
+                <input type="radio" name="email"  value="1" id="this_email" checked /><label for="this_email"> Usar el email vinculado a esta cuenta (lorman.alberto@gmail.com)</label><br /><br />
+                <input type="radio" name="email" value="2" id="new_email" /><label for="new_email"> Usar otro email </label> <input type="text" name="new_email" placeholder="ejemplo@email.com" id="new_email_text" />               
+            </div>
+            
+        </div>
+        
+
+<!-- -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </envio> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- --> 
+
+
+
+
+
+
+<!-- -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- <pago> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- --> 
+
+        
+        
+        
+        <div id="pay-wrapper">
+        
+        	<h2>Seleccione el metodo de pago</h2>
+        
+        	<div id="pay-images">
+                <div><img alt="bank-transfer" src="images/pagos/bank-transfer.gif" /></div>
+                <div><img alt="bitcoin" src="images/pagos/bitcoin.jpg" /></div>
+                <div><img alt="cashu" src="images/pagos/cashu.jpg" /></div>
+                <div><img alt="credit-card" src="images/pagos/credit-card.jpg" /></div>
+                <div><img alt="paypal" src="images/pagos/paypal.jpg" /></div>
+                <div><img alt="paysafecard" src="images/pagos/paysafecard.jpg" /></div>
+                <div><img alt="skrill" src="images/pagos/skrill.jpg" /></div>
+                <div><img alt="sofort" src="images/pagos/sofort.png" /></div>
+                <div><img alt="trustly" src="images/pagos/trustly.jpg" /></div>
+                <div><img alt="ukash" src="images/pagos/ukash.jpg" /></div>
+        	</div>
+            
+            <div id="pay-info">Tras confirmar el pedido de compra se le redireccionará a la página del metodo seleccionado para realizar el pago.</div>
+        	
+        </div>
+        
+
+<!-- -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </pago> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- --> 
+        
+        
+        
+        
+        
+        
+        
+        
+<!-- -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- <confirmacion> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- -->         
+        
+        
+        <div id="conf-wrapper">
+        
+        	<h2>Resumen de los detalles</h2>
+        
+        	<div id="conf-top">
+                <div id="conf-billing">
+                    <span>Alberto Lorman</span>
+                    <span>C/ Falsa 123</span>
+                    <span>Gavà 08850</span>
+                    <span>España</span>
+                </div>
+                <div id="conf-ship">
+                    <span><img alt="mrw" src="images/mrw.png" /></span>
+                    <span>Servicio de transporte MRW</span>
+                </div>
+                <div id="conf-pay">
+                    <span><img alt="paypal" src="images/pagos/paypal.jpg" /></span>
+                    <span>Paypal Website, Standard Payments</span>
+                </div>
+                <div id="conf-total">
+                    <div>Importe Total <span id="conf-total-price">78,77€</span></div>
+                    <div>Confirmar pedido <i class="fa fa-arrow-right" id="conf-arrow"></i></div>
+                </div>
+            </div>
+            
+            <div>
+            	<table>
+                	<tr>
+                    	<td colspan="2" id="tb-titulo">Título</td> <td>Versión</td> <td>Precio/Ud.</td> <td>Cant.</td> <td>Subtotal</td> 
+                    </tr>
+                    
+                	<tr>
+                    	<td><img alt="el_limite" src="images/books/el_limite.jpg" /></td>
+                    	<td>El Límite</td>
+                    	<td>Físico</td>
+                    	<td>22,90€</td>
+                    	<td>1</td>
+                    	<td>22,90€</td>
+                    </tr>
+                    
+                	<tr>
+                    	<td><img alt="la_nueva_educacion" src="images/books/la_nueva_educacion.jpg" /></td>
+                    	<td>La Nueva Educación</td>
+                    	<td>E-Book</td>
+                    	<td>9,99€</td>
+                    	<td>3</td>
+                    	<td>29,97€</td>
+                    </tr>
+                    
+                	<tr>
+                    	<td><img alt="la_trilogia_de_la_niebla" src="images/books/la_trilogia_de_la_niebla.jpg" /></td>
+                    	<td>La Trilogía de la Niebla</td>
+                    	<td>Físico</td>
+                    	<td>12,95€</td>
+                    	<td>2</td>
+                    	<td>25,90€</td>
+                    </tr>
+                </table>
+            </div>
+        	
+        </div>
+        
+
+<!-- -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </confirmacion> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- --> 
+        
+        
+        
+        
+        <div id="procede">
+        	<div id="back"><i class="fa fa-arrow-left"></i> Atrás</div>
+        	<div id="continue">Siguiente <i class="fa fa-arrow-right"></i></div>
+        </div>
+        
+        
+    </div>
+
+<!-- -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- <FOOTER> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- -->
+    
+    <footer> 
+    	<div id="copyright">Copyright © 2016 - redbook.com</div>
+        <div id="social">
+        	<a href="#"><i class="fa fa-facebook-square"></i></a>
+        	<a href="#"><i class="fa fa-twitter-square"></i></a>
+        	<a href="#"><i class="fa fa-pinterest-square"></i></a>
+        	<a href="#"><i class="fa fa-instagram"></i></a>
+        	<a href="#"><i class="fa fa-phone-square"></i></a>
+        </div>
+    </footer>
+
+<!-- -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </FOOTER> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- -->
+
+</div>
+
+</body>
+</html>
